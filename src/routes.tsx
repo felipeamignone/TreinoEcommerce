@@ -1,11 +1,14 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Carrinho from "./pages/Carrinho";
 
 const Routes: React.FC = () => {
   return (
-    <Switch>
-      {/* <Route path="/" exact component={Landing} /> */}
-    </Switch>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/cart" exact component={Carrinho} />
+      </Switch>
+    </BrowserRouter>
   );
 };
 
