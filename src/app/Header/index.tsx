@@ -7,10 +7,11 @@ import { Container, HomeButton, HomeIcon, HomeText } from "./styles";
 const Header: React.FC = () => {
   return (
     <Container>
-      <HomeButton>
+      <HomeButton href="/">
         <HomeIcon src={Home} alt="Icone menu" />
       </HomeButton>
       <HomeText>e-commerce de alface</HomeText>
+      <div />
     </Container>
   );
 };
