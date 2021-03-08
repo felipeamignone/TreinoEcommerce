@@ -1,4 +1,5 @@
 import React from "react";
+import { IProductDetail } from "../../data/models/typeProductDeatail";
 
 import {
   Container,
@@ -7,12 +8,17 @@ import {
   ButtonRmv,
   ProductImg,
   Contador,
+  ProductName,
 } from "./styles";
 
-const ProductDetail = (): JSX.Element => {
+const ProductDetail = (props: IProductDetail): JSX.Element => {
+const { img, name  } = props;
+
+
   return (
     <Container>
-      <ProductImg src="/" alt="Foto do produto" />
+      <ProductImg src={img} alt="Foto do produto" />
+      <ProductName> {name} </ProductName>
       <ButtonsContainer>
         <ButtonAdd>+</ButtonAdd>
         <Contador>0</Contador>

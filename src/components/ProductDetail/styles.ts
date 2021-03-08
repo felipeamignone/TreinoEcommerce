@@ -13,7 +13,14 @@ export const Container = styled.div`
   padding: 8px;
 `;
 
-export const ProductImg = styled.img``;
+export const ProductImg = styled.img`
+display: flex;
+justify-content: space-between;
+border: 4px;
+border: 8px;
+width: 100px;
+height: 100px;
+`;
 
 export const ButtonsContainer = styled.div`
   display: flex;
@@ -35,3 +42,5 @@ export const ButtonRmv = styled.button`
 `;
 
 export const Contador = styled.p``;
+
+export const ProductName = styled.p``;
